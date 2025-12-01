@@ -1,0 +1,17 @@
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\OracleWinFormsApp.exe
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\OracleWinFormsApp.deps.json
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\OracleWinFormsApp.runtimeconfig.json
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\OracleWinFormsApp.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\OracleWinFormsApp.pdb
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.Form1.resources
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.csproj.GenerateResource.cache
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.AssemblyInfoInputs.cache
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.AssemblyInfo.cs
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.sourcelink.json
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\refint\OracleWinFormsApp.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.pdb
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.genruntimeconfig.cache
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\ref\OracleWinFormsApp.dll
