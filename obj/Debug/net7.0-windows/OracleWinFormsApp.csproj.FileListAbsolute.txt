@@ -15,3 +15,10 @@ C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7
 C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.pdb
 C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.genruntimeconfig.cache
 C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\ref\OracleWinFormsApp.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\runtimes\linux\lib\net7.0\System.DirectoryServices.Protocols.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\runtimes\osx\lib\net7.0\System.DirectoryServices.Protocols.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.DirectoryServices.Protocols.dll
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWinFormsApp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\source\repos\OracleWinFormsApp\OracleWinFormsApp\obj\Debug\net7.0-windows\OracleWi.0A61466B.Up2Date
