@@ -4,6 +4,8 @@
 
 # VisualStudio Oracle Persistence App (WinForms) — Documentación y Código
 
+<img width="2552" height="1078" alt="image" src="https://github.com/user-attachments/assets/abd44c8a-6190-4188-9bf4-9c175fd13a62" />  
+
 **Proyecto:** Visual Studio 2022 — WinForms (.NET 6)  
 **Persistencia:** Oracle 19c (Oracle.ManagedDataAccess.Core)  
 **Contenido:** README con documentación completa, código fuente (archivos C# incluidos), script SQL para la tabla, y un logo en SVG.
