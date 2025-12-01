@@ -22,6 +22,7 @@ namespace OracleWinFormsApp
             _connection = new OracleConnection(connectionString);
             _connection.Open();
         }
+
         public void Dispose()
         {
             try { _connection?.Close(); }
@@ -33,9 +34,14 @@ namespace OracleWinFormsApp
         {
             using (var cmd = _connection.CreateCommand())
             {
-                cmd.CommandText = "INSERT INTO Persons (Name, Email, CreatedAt) VALUES (:name, :email)";
+                // INSERT ajustado EXACTO a tu tabla
+                cmd.CommandText = @"
+                    INSERT INTO PERSONS (NAME, EMAIL, CREATED_AT)
+                    VALUES (:name, :email, SYSTIMESTAMP)";
+
                 cmd.Parameters.Add(new OracleParameter("name", OracleDbType.Varchar2, name, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("email", OracleDbType.Varchar2, email, ParameterDirection.Input));
+
                 cmd.ExecuteNonQuery();
             }
         }
@@ -43,9 +49,15 @@ namespace OracleWinFormsApp
         public List<Person> GetPersons()
         {
             var list = new List<Person>();
+
             using (var cmd = _connection.CreateCommand())
             {
-                cmd.CommandText = "SELECT ID, NAME, EMAIL, CREATED_AT FROM PERSONS_F ORDER BY ID";
+                // SELECT idéntico al orden real de tu tabla
+                cmd.CommandText = @"
+                    SELECT ID, NAME, EMAIL, CREATED_AT 
+                    FROM PERSONS 
+                    ORDER BY ID";
+
                 using (var reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -57,10 +69,12 @@ namespace OracleWinFormsApp
                             Email = reader.IsDBNull(2) ? null : reader.GetString(2),
                             CreatedAt = reader.IsDBNull(3) ? DateTime.MinValue : reader.GetDateTime(3)
                         };
+
                         list.Add(p);
                     }
                 }
             }
+
             return list;
         }
     }

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-
 namespace OracleWinFormsApp
 {
     public partial class Form1 : Form
@@ -13,8 +12,9 @@ namespace OracleWinFormsApp
         private DataGridView dgv;
         private Label lblStatus;
 
-        // cambie la cadena de conexion por la suya o lea de un archivo de confirguracion.
-        private string connectionString = "User Id=system;Password=Tapiero123;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)));";
+        // Ajuste: cadena de conexión correcta
+        private string connectionString =
+            "User Id=system;Password=Tapiero123;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)));";
 
         public Form1()
         {
@@ -67,19 +67,23 @@ namespace OracleWinFormsApp
 
             if (string.IsNullOrEmpty(name))
             {
-                MessageBox.Show("Ingrese un nombre. ", "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ingrese un nombre.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtName.Focus();
                 return;
             }
 
-            try {                 
+            try
+            {
                 using (var db = new DataAccess(connectionString))
                 {
                     db.InsertPerson(name, email);
                 }
-                lblStatus.Text = "Guardado correctamente .";
+
+                lblStatus.Text = "Guardado correctamente.";
                 txtName.Text = "";
                 txtEmail.Text = "";
+                txtName.Focus();
+
                 LoadData();
             }
             catch (Exception ex)
@@ -98,17 +102,24 @@ namespace OracleWinFormsApp
                 {
                     rows = db.GetPersons();
                 }
+
                 dgv.DataSource = rows;
+
+                // Ajuste: renombrar encabezados para claridad
+                if (rows.Count > 0)
+                {
+                    dgv.Columns["Id"].HeaderText = "ID";
+                    dgv.Columns["Name"].HeaderText = "Nombre";
+                    dgv.Columns["Email"].HeaderText = "Correo";
+                    dgv.Columns["CreatedAt"].HeaderText = "Fecha Registro";
+                }
+
+                lblStatus.Text = "Datos cargados correctamente.";
             }
             catch (Exception ex)
             {
                 lblStatus.Text = "Error leyendo datos: " + ex.Message;
             }
         }
-
-     /*   private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }*/
     }
 }
