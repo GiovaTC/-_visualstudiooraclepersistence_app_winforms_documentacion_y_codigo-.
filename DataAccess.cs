@@ -36,7 +36,7 @@ namespace OracleWinFormsApp
             {
                 // INSERT ajustado EXACTO a tu tabla
                 cmd.CommandText = @"
-                    INSERT INTO PERSONS (NAME, EMAIL, CREATED_AT)
+                    INSERT INTO PERSONS_F (NAME, EMAIL, CREATED_AT)
                     VALUES (:name, :email, SYSTIMESTAMP)";
 
                 cmd.Parameters.Add(new OracleParameter("name", OracleDbType.Varchar2, name, ParameterDirection.Input));
@@ -55,7 +55,7 @@ namespace OracleWinFormsApp
                 // SELECT idéntico al orden real de tu tabla
                 cmd.CommandText = @"
                     SELECT ID, NAME, EMAIL, CREATED_AT 
-                    FROM PERSONS 
+                    FROM PERSONS_F 
                     ORDER BY ID";
 
                 using (var reader = cmd.ExecuteReader())
