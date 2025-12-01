@@ -91,12 +91,24 @@ namespace OracleWinFormsApp
 
         private void LoadData()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Person> rows;
+                using (var db = new DataAccess(connectionString))
+                {
+                    rows = db.GetPersons();
+                }
+                dgv.DataSource = rows;
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = "Error leyendo datos: " + ex.Message;
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+     /*   private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
+        }*/
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OracleWinFormsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bab9efb74a7e7fc1280393f9ff39f07d3e4eacfb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36b6f97af69176da88195698d3a8dabeae815331")]
 [assembly: System.Reflection.AssemblyProductAttribute("OracleWinFormsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OracleWinFormsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
